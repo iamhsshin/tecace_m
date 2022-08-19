@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@import 'config';
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../font/Poppins-Light.woff');
+    src: url('../font/Poppins-Light.woff') format('woff');
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../font/Poppins-Regular.woff');
+    src: url('../font/Poppins-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../font/Poppins-Medium.woff');
+    src: url('../font/Poppins-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../font/Poppins-SemiBold.woff');
+    src: url('../font/Poppins-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../font/Poppins-Bold.woff');
+    src: url('../font/Poppins-Bold.woff') format('woff');
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+a {
+    margin: 0;
+    padding: 0;
+}
+body,
+table,
+input,
+textarea,
+button,
+select {
+    @include font-regular;
+    font-size: 1em;
+    line-height: normal;
+    color: $color-text-default;
+}
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img,
+fieldset,
+button {
+    border: 0;
+}
+input,
+textarea,
+img {
+    vertical-align: top;
+}
+button {
+    cursor: pointer;
+    background: 0;
+}
+strong {
+    font-weight: normal;
+}
+input {
+    border: none;
+    outline: none;
+    //-webkit-appearance: none;
+}
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea {
+    width: 100%;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='tel'] {
+    height: 30px;
+    padding: 0 10px;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+    border: 0;
+    padding: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font: {
+        weight: normal;
+        size: inherit;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+ul,
+ol {
+    list-style: none;
+}
+em,
+address {
+    font-style: normal;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: $color-text-default;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+hr,
+caption,
+legend {
+    display: none;
+}

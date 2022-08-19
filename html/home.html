@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-home">
+                <div class="lazy">
+                    <h2>Create Innovative Tech Experience</h2>
+                    <p>We’re creators, designers, and engineers solving business challenges with innovative technology solutions</p>
+                    <a href="#">VIEW WORK</a>
+                </div>
+            </div>
+            <!-- //home-banner -->
+
+            <div class="home-partners lazy">
+                <h3>
+                    Our Global Industry <br />
+                    Leading Client <br />
+                    Partners
+                </h3>
+                <ul>
+                    <li><img src="../images/partner_samsung.png" alt="samsung" width="50" height="17" /></li>
+                    <li>
+                        <img src="../images/partner_benz.png" alt="mercedes benz" width="73" height="15" />
+                    </li>
+                    <li><img src="../images/partner_nike.png" alt="nike" width="50" height="26" /></li>
+                </ul>
+                <ul>
+                    <li><img src="../images/partner_amazon.png" alt="amazon" width="50" height="15" /></li>
+                    <li><img src="../images/partner_bmw.png" alt="bmw group" width="43" height="15" /></li>
+                    <li><img src="../images/partner_strava.png" alt="strava" width="60" height="13" /></li>
+                </ul>
+                <ul>
+                    <li><img src="../images/partner_naver.png" alt="naver" width="50" height="9" /></li>
+                    <li><img src="../images/partner_kakao.png" alt="kakao" width="50" height="16" /></li>
+                    <li>
+                        <img src="../images/partner_uh.png" alt="united healthcare" width="48" height="16" />
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="../images/partner_ms.png" alt="microsoft" width="70" height="16" /></li>
+                    <li>
+                        <img src="../images/partner_taylor.png" alt="taylor made" width="78" height="16" />
+                    </li>
+                    <li><img src="../images/partner_sportify.png" alt="sportify" width="52" height="16" /></li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../images/partner_starbucks.png" alt="starbucks" width="85" height="15" />
+                    </li>
+                    <li><img src="../images/partner_uber.png" alt="uber" width="50" height="18" /></li>
+                    <li><img src="../images/partner_marvel.png" alt="marvel" width="50" height="23" /></li>
+                </ul>
+            </div>
+            <!-- //home-partners -->
+
+            <div class="home-service">
+                <div class="contents-header lazy">
+                    <h3>Solutions for Cross-device Experience And Cloud Service</h3>
+                    <p>With over 20 years of software development experience and state-of-the-art technologies, TecAce provides expertise in multi-platform apps, cloud services, and Custom Software design & development that helps you achieve your business goals.</p>
+                </div>
+                <div>
+                    <h4 class="lazy">
+                        The Things <br />
+                        We are Doing
+                    </h4>
+                    <div class="list-service">
+                        <dl class="lazy">
+                            <dt>
+                                Multi-Devices & CROSS <br />
+                                Platforms DEVELOPMENT
+                            </dt>
+                            <dd>S/W development technology and experience for various types of Multi Devices and OS</dd>
+                        </dl>
+                        <dl class="lazy">
+                            <dt>CLOUD SERVICE Development</dt>
+                            <dd>Leading Cloud Service provider, specialized in developing custom frontend and backend software solutions</dd>
+                        </dl>
+                        <dl class="lazy">
+                            <dt>CUSTOM SOFTWARE DESIGN & DEVELOPMENT</dt>
+                            <dd>Efficient S/W planning and UI/UX construction for global customers based on image processing, 3D, AR, VR technology, etc.</dd>
+                        </dl>
+                        <dl class="lazy">
+                            <dt>Metaverse Solution Service</dt>
+                            <dd>Expanding new metaverse solution service to B2B and B2B2C</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- //home-service -->
+
+            <div class="home-work">
+                <button class="banner-swipe left">left</button>
+                <button class="banner-swipe right">right</button>
+                <div class="lazy">
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <div class="home-work-thumb">
+                                    <img src="../images/home_work1.png" width="280" height="341" alt="" />
+                                </div>
+                                Retail Experience App
+                            </dt>
+                            <dd>Device optimization, Content Globalization, Retail environment</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <div class="home-work-thumb">
+                                    <img src="../images/home_work2.png" width="280" height="341" alt="" />
+                                </div>
+                                Ring for Watch
+                            </dt>
+                            <dd>Access your Smart Video Doorbells and Security Cameras</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <div class="home-work-thumb">
+                                    <img src="../images/home_work3.png" width="280" height="341" alt="" />
+                                </div>
+                                Strava
+                            </dt>
+                            <dd>Health activity app on Galaxy Watch</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <div class="home-work-thumb">
+                                    <img src="../images/home_work4.png" width="280" height="341" alt="" />
+                                </div>
+                                Developer Portal DevOps
+                            </dt>
+                            <dd>Developed the portal and provided DevOps service</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <div class="home-work-thumb">
+                                    <img src="../images/home_work5.png" width="170" height="206" alt="" />
+                                </div>
+                                Rosetta Stone
+                            </dt>
+                            <dd>1:1 English tutoring service for Korean market</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //home-work -->
+
+            <div class="home-solutions">
+                <h2 class="lazy">We Work Across Many Industries Find Yours!</h2>
+                <ul class="list-solutions lazy">
+                    <li>IOT</li>
+                    <li>health</li>
+                    <li>education</li>
+                    <li>retail tech</li>
+                    <li>portal</li>
+                </ul>
+                <div class="lazy">
+                    <h3>Software Solutions For Industry Leaders</h3>
+                    <p>Need a software solution that’s right for you? Choose a digital product crafted to answer the challenges of your industry. Empower your business with a state-of-the-art digital solution, tailored to your needs and expectations.</p>
+                </div>
+            </div>
+            <!-- //home-solutions -->
+
+            <div class="home-news">
+                <div class="contents-header lazy">
+                    <h3>Latest News</h3>
+                    <p>Check out news of TecAce for a more convenient and smart life.</p>
+                </div>
+                <ul class="lazy">
+                    <li>
+                        <a href="#">
+                            <div class="home-news-thumb">
+                                <img src="../images/tmp-home-news1.png" alt="" width="310" height="144" class="hover-eff" />
+                            </div>
+                            <article>
+                                <h4>TecAce opened a new branch office in Gangnam, Seoul, south korea</h4>
+                                <p>TecAce opened another office, TecAce gx, a third branch in Gangnam, Seoul, South Korea, on February 22, 2022.</p>
+                            </article>
+                            <em>Read more ></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="home-news-thumb">
+                                <img src="../images/tmp-home-news1.png" alt="" width="310" height="144" class="hover-eff" />
+                            </div>
+                            <article>
+                                <h4>TecAce opened a new branch office in Gangnam, Seoul, south korea</h4>
+                                <p>TecAce opened another office, TecAce gx, a third branch in Gangnam, Seoul, South Korea, on February 22, 2022.</p>
+                            </article>
+                            <em>Read more ></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="home-news-thumb">
+                                <img src="../images/tmp-home-news1.png" alt="" width="310" height="144" class="hover-eff" />
+                            </div>
+                            <article>
+                                <h4>TecAce opened a new branch office in Gangnam, Seoul, south korea</h4>
+                                <p>TecAce opened another office, TecAce gx, a third branch in Gangnam, Seoul, South Korea, on February 22, 2022.</p>
+                            </article>
+                            <em>Read more ></em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //home-news -->
+
+            <div class="home-contact">
+                <div class="home-contact-form">
+                    <h3>
+                        Let’s Catch <br />
+                        The Initial Spark!
+                    </h3>
+                    <div class="home-contact-profile">
+                        <dl>
+                            <dt><label for="contact_name">Name *</label></dt>
+                            <dd><input type="text" id="contact_name" /></dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="contact_mail">E-mail *</label></dt>
+                            <dd><input type="text" id="contact_mail" /></dd>
+                        </dl>
+                    </div>
+                    <div class="home-contact-question">
+                        <h4>How can we help you?</h4>
+                        <label for="question_title">message title</label>
+                        <input type="text" id="question_title" placeholder="message title" />
+                        <label for="question_message"></label><textarea id="question_message" placeholder="type your request or question"></textarea>
+                        <div class="limit-textarea">
+                            <div>0</div>
+                            /2000
+                        </div>
+                    </div>
+                    <div class="home-contact-agree">
+                        <input type="checkbox" id="terms_agree" />
+                        <label for="terms_agree">
+                            By checking this box, I agree to the TecAce <br />
+                            <a href="#">Terms of Use</a> and acknowledge I have read <br />
+                            the <a href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="home-contact-submit">
+                        <button>Send Message</button>
+                    </div>
+                </div>
+                <div class="home-contact-branches">
+                    <h4>TecAce Software, Ltd.</h4>
+                    <dl>
+                        <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                        <dd>
+                            840 140 Ave. NE <br />
+                            Bellevue, WA 98005 <br />
+                            + 1 (425) 952-6070 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ALLEN, TEXAS</dt>
+                        <dd>
+                            825 Watter’s Creek Blvd. <br />
+                            Building M, Suite 250 <br />
+                            Allen, TX 75013 <br />
+                            + 1 (972) 996-4700 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce Solutions, Inc.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #910 130 Digital-ro Geumcheon-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 2104-0370 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce gx, Ltd.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #110 13F, 373, Gangnam-daero <br />
+                            Seocho-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 6959-1200 <br />
+                            gx@tecace.com
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>

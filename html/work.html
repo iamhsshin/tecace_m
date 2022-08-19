@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-top banner-work">
+                <div class="lazy">
+                    <h2>Unique Knowhow & Experience</h2>
+                    <p>A proven track record of offering creative solutions including Cross-Device Apps, Cloud Service, and Custom software development</p>
+                </div>
+            </div>
+            <!-- //banner-top -->
+
+            <div class="work-solutions">
+                <div class="contents-header lazy">
+                    <h3>Custom solutions for multiple industries</h3>
+                    <p>Choose a software development partner that knows the realities of your business. We foster innovation across various industries, from Retail, IoT, Health, CRM portal, and education.</p>
+                </div>
+                <ul class="list-solutions lazy">
+                    <li>IOT</li>
+                    <li>health</li>
+                    <li>education</li>
+                    <li>retail tech</li>
+                    <li>portal</li>
+                </ul>
+            </div>
+            <!-- //work-solutions -->
+
+            <div class="detail-solutions bgc">
+                <div class="lazy">
+                    <h4>Retail Tech</h4>
+                    <p>Backed by TecAce's Retail Solutions, you'll delight your customers and maximize omnichannel capabilities.</p>
+                    <ul>
+                        <li>Contents Globalization Service</li>
+                        <li>Retail Specific solution - non internet environment- development</li>
+                        <li>Multi device Experience</li>
+                    </ul>
+                </div>
+                <div class="detail-solutions-detail lazy">
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech1.png" alt="" /></div>
+                        <dl>
+                            <dt>Retail Store Analytics</dt>
+                            <dd>Analytics Dashboard Using Data From Combination Of AI Camera, And App Analytics</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech2.png" alt="" /></div>
+                        <dl>
+                            <dt>Multi-device Experience</dt>
+                            <dd>Multi Device Experience Throughout Phone, Wearable, Tablet, PC, TV</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech3.png" alt="" /></div>
+                        <dl>
+                            <dt>Retail Experience App</dt>
+                            <dd>Device Optimization, Content Globalization, Retail Environment</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //detail-solutions -->
+
+            <div class="detail-solutions">
+                <div class="lazy">
+                    <h4>Internet of Things</h4>
+                    <p>Utilizing our IoT, wearable and Custom app development capability, we can help bring your vision to life and create experiences that exceed all expectations.</p>
+                    <ul>
+                        <li>Service and Solution design leveraging IoT devices</li>
+                        <li>Firmware Development</li>
+                        <li>Device Connectivity & integration</li>
+                        <li>Real-time Operating Systems</li>
+                    </ul>
+                </div>
+                <div class="detail-solutions-detail lazy">
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things1.png" alt="" /></div>
+                        <dl>
+                            <dt>Ring for Watch</dt>
+                            <dd>Access Your Smart Video Doorbells And Security Cameras</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things2.png" alt="" /></div>
+                        <dl>
+                            <dt>Touch Table</dt>
+                            <dd>UI/UX And App Development Along With Device Optimation For 52" Display</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things3.png" alt="" /></div>
+                        <dl>
+                            <dt>Avengers Exhibition</dt>
+                            <dd>Location Based Content Delivery Utilizing Beacon And Dedicated Wearable</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //detail-solutions -->
+
+            <div class="detail-solutions bgc">
+                <div class="lazy">
+                    <h4>Health</h4>
+                    <p>Been thinking of how consumer device can help health. We have created various health related solutions using IoT such as wearable devices.</p>
+                    <ul>
+                        <li>HIPAA Compliance</li>
+                        <li>Hardware/Software integration for health related service</li>
+                        <li>Application development for health related data gathering and analyzing</li>
+                    </ul>
+                </div>
+                <div class="detail-solutions-detail lazy">
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health1.png" alt="" /></div>
+                        <dl>
+                            <dt>Virtual Travel</dt>
+                            <dd>Wearable Gamified Health App</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health2.png" alt="" /></div>
+                        <dl>
+                            <dt>CareAce</dt>
+                            <dd>Health Monitoring Service Utilizing Wearable Sensors</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health3.png" alt="" /></div>
+                        <dl>
+                            <dt>Strava</dt>
+                            <dd>Health Activity App On Galaxy Watch</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //detail-solutions -->
+
+            <div class="detail-solutions">
+                <div class="lazy">
+                    <h4>Customer Relationship Portal</h4>
+                    <p>Developing an amazing product is one of the hardest challenges but strong partner and customer relations is what will truly determine the success of your business.</p>
+                    <ul>
+                        <li>TecAce CMS</li>
+                        <li>TecAce CRM</li>
+                        <li>Ticket System</li>
+                        <li>SSO</li>
+                    </ul>
+                </div>
+                <div class="detail-solutions-detail lazy">
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal1.png" alt="" /></div>
+                        <dl>
+                            <dt>Developer Portal DevOps</dt>
+                            <dd>Developed The Portal And Provided DevOps Service</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal2.png" alt="" /></div>
+                        <dl>
+                            <dt>ePOP Simulator</dt>
+                            <dd>EPOP Simulator For Desktop</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal3.png" alt="" /></div>
+                        <dl>
+                            <dt>Resource Studio</dt>
+                            <dd>Localization Tool For Different Countries</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //detail-solutions -->
+
+            <div class="detail-solutions bgc">
+                <div class="lazy">
+                    <h4>Education</h4>
+                    <p>We offer educational strategies and solutions that allow to cost-effectively use modern IT to support educator, administrator and students.</p>
+                    <ul>
+                        <li>Design of visual effects for real-time feedback</li>
+                        <li>Kids friendly design for education app</li>
+                    </ul>
+                </div>
+                <div class="detail-solutions-detail lazy">
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education1.png" alt="" /></div>
+                        <dl>
+                            <dt>Rosetta Stone</dt>
+                            <dd>1:1 English tutoring Service For Korean Market</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education2.png" alt="" /></div>
+                        <dl>
+                            <dt>Chunjae Education</dt>
+                            <dd>Education-Related EBooks For Students</dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education3.png" alt="" /></div>
+                        <dl>
+                            <dt>Neungyule Education</dt>
+                            <dd>Virtual Vocabulary Trainer For Studying TOEIC</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <!-- //detail-solutions -->
+
+            <div class="home-contact">
+                <div class="home-contact-branches">
+                    <h4>TecAce Software, Ltd.</h4>
+                    <dl>
+                        <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                        <dd>
+                            840 140 Ave. NE <br />
+                            Bellevue, WA 98005 <br />
+                            + 1 (425) 952-6070 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ALLEN, TEXAS</dt>
+                        <dd>
+                            825 Watter’s Creek Blvd. <br />
+                            Building M, Suite 250 <br />
+                            Allen, TX 75013 <br />
+                            + 1 (972) 996-4700 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce Solutions, Inc.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #910 130 Digital-ro Geumcheon-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 2104-0370 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce gx, Ltd.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #110 13F, 373, Gangnam-daero <br />
+                            Seocho-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 6959-1200 <br />
+                            gx@tecace.com
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>

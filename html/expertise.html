@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-top banner-expert">
+                <div class="lazy">
+                    <h2>Cross Devices & Cloud Services</h2>
+                    <p>
+                        A proven track record of offering creative <br />
+                        solutions including Cross-Device Apps, <br />
+                        Cloud Service, and Custom software <br />
+                        development
+                    </p>
+                </div>
+            </div>
+            <!-- //banner-top -->
+
+            <div class="expertise">
+                <div class="contents-header lazy">
+                    <h3>
+                        A Facilitator For Big Movers In A Dynamic <br />
+                        And Fluctuating IT Industry
+                    </h3>
+                    <p>
+                        A proven track record of offering creative solutions including Cross-Device Apps, Cloud <br />
+                        Service, and Custom software development
+                    </p>
+                </div>
+                <div class="list-service">
+                    <dl class="lazy">
+                        <dt>
+                            Multi-Devices & CROSS <br />
+                            Platforms DEVELOPMENT
+                        </dt>
+                        <dd>A unique experienced company providing breakthrough cross-device experience with comprehensive device understanding</dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>CLOUD SERVICE Development</dt>
+                        <dd>Leading Cloud Service provider, specialized in developing custom frontend and backend software solutions</dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>
+                            CUSTOM SOFTWARE <br />
+                            DESIGN & DEVELOPMENT
+                        </dt>
+                        <dd>A group of experts offering not limited to software development but also anlaysis, research, UI/UX design, development and QA to various industires.</dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>Metaverse Solution Service</dt>
+                        <dd>Leading Cloud Service provider, specialized in developing custom frontend and backend software solutions</dd>
+                    </dl>
+                </div>
+                <div class="detail-service">
+                    <dl class="lazy">
+                        <dt>Multi-device & Cross Platforms development</dt>
+                        <dd>
+                            Smartphones, tablets, wearables, smart monitors, smart TVs, refrigerators, etc. S/W development technology and experience for various types of Multi Devices and OS, such as Android OS, iOS, Tizen, Window, and Web. <br /><br />
+                            In addition, secure technology based on unrivaled development experience.
+                        </dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>Cloud Service Development</dt>
+                        <dd>From IoT-based Low Level H/W driving technology including Image Sensor to designing, building and operating scalable server solutions on the Cloud Full Stack development ability.</dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>Custom Software Design & Development</dt>
+                        <dd>
+                            Efficient S/W planning and UI/UX construction for global customers based on image processing, 3D, AR, VR technology, etc.<br /><br />
+                            Securing cutting edge technology and leading technology in the design area and various implementation capabilities.
+                        </dd>
+                    </dl>
+                    <dl class="lazy">
+                        <dt>metaverse Solution service</dt>
+                        <dd>Expanding new metaverse solution service to B2B and B2B2C based on metaverse related solution design implementation technology and service operation experience</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //expertise -->
+
+            <div class="home-contact">
+                <div class="home-contact-branches">
+                    <h4>TecAce Software, Ltd.</h4>
+                    <dl>
+                        <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                        <dd>
+                            840 140 Ave. NE <br />
+                            Bellevue, WA 98005 <br />
+                            + 1 (425) 952-6070 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ALLEN, TEXAS</dt>
+                        <dd>
+                            825 Watter’s Creek Blvd. <br />
+                            Building M, Suite 250 <br />
+                            Allen, TX 75013 <br />
+                            + 1 (972) 996-4700 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce Solutions, Inc.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #910 130 Digital-ro Geumcheon-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 2104-0370 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce gx, Ltd.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #110 13F, 373, Gangnam-daero <br />
+                            Seocho-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 6959-1200 <br />
+                            gx@tecace.com
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>

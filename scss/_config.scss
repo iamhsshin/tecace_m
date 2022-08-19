@@ -1,0 +1,50 @@
+$color-text-default: #000000;
+$color-text-highlight: #4ac8f5;
+
+@mixin font-light {
+    font-family: Poppins-Light, serif;
+}
+@mixin font-regular {
+    font-family: Poppins-Regular, serif;
+}
+@mixin font-medium {
+    font-family: Poppins-Medium, serif;
+}
+@mixin font-semi-bold {
+    font-family: Poppins-SemiBold, serif;
+}
+@mixin font-bold {
+    font-family: Poppins-Bold, serif;
+}
+@mixin ir {
+    //image replacement
+    font-size: 0 !important;
+    color: rgba(0, 0, 0, 0) !important;
+}
+@mixin ellipsis($line: 1) {
+    overflow: hidden;
+    @if $line == 1 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    } @else {
+        display: -webkit-box;
+        white-space: normal;
+        /*! autoprefixer: off */
+        //React 자동 삭제 방지
+        -webkit-line-clamp: $line;
+        /*! autoprefixer: on */
+        -webkit-box-orient: vertical;
+    }
+}
+@function calcVw($size) {
+    @return ($size * 100) / 390 + vw;
+}
+.lazy {
+    opacity: 0;
+    transform: translateY(50px);
+}
+.lazy-off {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}

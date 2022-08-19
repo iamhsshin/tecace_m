@@ -1,0 +1,94 @@
+@import 'config';
+
+#wrap {
+    overflow: hidden;
+    position: relative;
+}
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    background-color: #020a27;
+    h1 {
+        position: relative;
+        width: 159px;
+        height: 60px;
+        background: url('../images/logo_header.png') 50% 50% no-repeat;
+        background-size: contain;
+    }
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background: url('../images/btn_gnb_toggle.svg') 50% 50% no-repeat;
+        background-size: cover;
+        @include ir;
+    }
+}
+.gnb {
+    display: none;
+    opacity: 0.95;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 110px;
+    z-index: 100;
+    background: rgba(2, 10, 39, 0.9) url('../images/bg_main_header.svg') 0 0 no-repeat;
+    background-size: cover;
+    &.active {
+        display: block;
+    }
+    li {
+        a {
+            color: rgba(255, 255, 255, 0.7);
+            @include font-light;
+        }
+        &.depth {
+            ul {
+                display: none;
+            }
+            > a {
+                padding-right: 30px;
+                background: url('../images/bg_depth_inactive.svg') 100% 50% no-repeat;
+            }
+            &.focus {
+                ul {
+                    display: block;
+                }
+                > a {
+                    background-image: url('../images/bg_depth.svg');
+                }
+            }
+        }
+        &.focus {
+            > a {
+                color: $color-text-highlight;
+                @include font-semi-bold;
+            }
+        }
+    }
+    > li {
+        margin-bottom: 62px;
+        text-align: center;
+        line-height: 1;
+        > a {
+            font-size: 3.4rem;
+        }
+    }
+    ul {
+        margin-top: 30px;
+        li {
+            margin-bottom: 15px;
+            a {
+                line-height: 2;
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
