@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-top banner-career">
+                <div class="lazy">
+                    <h2>Career</h2>
+                    <p>We’re hiring. Let’s build the future together!</p>
+                </div>
+            </div>
+            <!-- //banner-top -->
+
+            <div class="career-desc">
+                <h2 class="lazy">TecAce seeks the best and the brightest to join our world-class team. If you are creative, passionate, and enjoy being a part of a high-energy team that thrives on mobile and embedded software excellence, we would like to hear from you!</h2>
+                <div class="career-desc-thumb lazy">
+                    <img src="../images/thumb_career_desc.png" alt="" />
+                </div>
+                <article>
+                    <h3 class="lazy">It’s More Than a Job!</h3>
+                    <p class="lazy">Our commitment doesn’t stop at our clients. We take pride in offering competitive compensation and benefits along with a company culture that embodies continuous learning and growth with a dedicated focus on employees satisfaction and work & life balance.</p>
+                    <dl class="lazy">
+                        <dt>Remote or hybrid working</dt>
+                        <dd>Because your days are different, we have an opportunity to work anywhere from home to office!</dd>
+                        <dt>Let’s thrive together!</dt>
+                        <dd>Continue learning and self-invest with our financial assistance.</dd>
+                        <dt>Your health is our priority</dt>
+                        <dd>Stay healthy with the competitive health care coverage.</dd>
+                        <dt>Plan for your future</dt>
+                        <dd>We help your financial security with our programs.</dd>
+                    </dl>
+                </article>
+            </div>
+            <!-- //career-desc -->
+
+            <div class="careers-positions">
+                <div class="careers-positions-thumb lazy"><img src="../images/thumb_career_positions.png" alt="" /></div>
+                <h3 class="lazy">Open Positions</h3>
+                <h4 class="lazy">Position</h4>
+                <div class="lazy">
+                    <dl>
+                        <dt>Software Engineer</dt>
+                        <dd>Full Time <br />Bellevue, WA (HQ) <a href="">APPLY NOW ></a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Software Engineer</dt>
+                        <dd>Full Time <br />Bellevue, WA (HQ) <a href="">APPLY NOW ></a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Software Engineer</dt>
+                        <dd>Full Time <br />Bellevue, WA (HQ) <a href="">APPLY NOW ></a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Software Engineer</dt>
+                        <dd>Full Time <br />Bellevue, WA (HQ) <a href="">APPLY NOW ></a></dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //careers-positions -->
+
+            <div class="home-contact">
+                <div class="home-contact-branches">
+                    <h4>TecAce Software, Ltd.</h4>
+                    <dl>
+                        <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                        <dd>
+                            840 140 Ave. NE <br />
+                            Bellevue, WA 98005 <br />
+                            + 1 (425) 952-6070 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ALLEN, TEXAS</dt>
+                        <dd>
+                            825 Watter’s Creek Blvd. <br />
+                            Building M, Suite 250 <br />
+                            Allen, TX 75013 <br />
+                            + 1 (972) 996-4700 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce Solutions, Inc.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #910 130 Digital-ro Geumcheon-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 2104-0370 <br />
+                            contact@tecace.com
+                        </dd>
+                    </dl>
+                    <h4>TecAce gx, Ltd.</h4>
+                    <dl>
+                        <dt>SEOUL, KOREA</dt>
+                        <dd>
+                            #110 13F, 373, Gangnam-daero <br />
+                            Seocho-gu <br />
+                            Seoul, South Korea 08589 <br />
+                            + 82 (2) 6959-1200 <br />
+                            gx@tecace.com
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>
