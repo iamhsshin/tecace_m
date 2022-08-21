@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div class="app_popup">
+            <h2>SOFTWARE ENGINEER</h2>
+            <h3>REQUIREMENTS:</h3>
+            <ul>
+                <li>Legally entitled to work in the U.S. for now and future.</li>
+                <li>BS degree in computer science or related field.</li>
+                <li>Local candidates only</li>
+                <li>Knowledge in Java, Android, Kotlin, JavaScript, C, and/or Web Application.</li>
+                <li>Proficient in many programming languages will be a plus.</li>
+                <li>Ability to pick up and build upon new concepts quickly.</li>
+                <li>Willing to learn and work as a team.</li>
+            </ul>
+            <h3>Nice to have but not necessary:</h3>
+            <ul>
+                <li>Other programming languages</li>
+                <li>Programming & Developing experience</li>
+                <li>Fluent in Korean</li>
+            </ul>
+            <h3>PERKS & BENEFITS</h3>
+            <ul class="both">
+                <li>Health Insurance</li>
+                <li>Dental Insurance</li>
+                <li>Vision Insurance</li>
+                <li>Flexible Spending Account</li>
+                <li>401(K) Retirement Plan</li>
+                <li>Basic Term Life Insurance</li>
+            </ul>
+            <h3>on top of everything, enjoy bottomless snacks and refreshment as well as great team-working environment!</h3>
+            <div class="form-career">
+                <div>
+                    <label for="">First Name <em>*</em></label>
+                    <input type="text" id="" />
+                </div>
+                <div>
+                    <label for="">Last Name <em>*</em></label>
+                    <input type="text" id="" />
+                </div>
+                <div>
+                    <label for="">E-mail</label>
+                    <input type="text" id="" />
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <input type="text" id="" />
+                </div>
+                <div>
+                    <label for="">Portfolio URL</label>
+                    <input type="text" id="" />
+                </div>
+                <div>
+                    <label for="">How did you hear about us?</label>
+                    <textarea id=""></textarea>
+                </div>
+                <div class="attach-files">
+                    <h4>Resume & CV <em>*</em></h4>
+                    <input type="file" id="file" />
+                    <input type="text" id="upload" placeholder="No file chosen" />
+                    <label for="file">Choose File</label>
+                    <script>
+                        document.getElementById('file').onchange = () => {
+                            document.getElementById('upload').value = document.getElementById('file').value;
+                        };
+                    </script>
+                </div>
+                <div class="form-footer">
+                    <button class="btn-default">Submit</button>
+                    <!--                    <button class="btn-default" disabled>Submit</button>-->
+                </div>
+            </div>
+            <button class="close-popup"><u>close</u></button>
+        </div>
+    </body>
+</html>
