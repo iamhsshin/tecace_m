@@ -126,7 +126,7 @@
             <div class="home-work">
                 <button class="banner-swipe left">left</button>
                 <button class="banner-swipe right">right</button>
-                <div class="lazy">
+                <div class="lazy slide">
                     <a href="#">
                         <dl>
                             <dt>
@@ -183,6 +183,44 @@
                         </dl>
                     </a>
                 </div>
+                <script>
+                    let curPos = 0;
+                    let position = 0;
+                    let start_x, end_x;
+                    const distance = window.innerWidth;
+                    const target = document.querySelector(".slide")
+
+                    const prev = () => {
+                        if(curPos > 0){
+                            position += distance;
+                            target.style.transform = `translateX(${position}px)`;
+                            curPos = curPos - 1;
+                        }
+                    }
+                    const next = () => {
+                        if(curPos < 4){
+                            position -= distance;
+                            target.style.transform = `translateX(${position}px)`;
+                            curPos = curPos + 1;
+                        }
+                    }
+
+                    const touch_start = (event) => {
+                        start_x = event.touches[0].pageX
+                    }
+
+                    const touch_end = (event) => {
+                        end_x = event.changedTouches[0].pageX;
+                        if(start_x > end_x){
+                            next();
+                        }else{
+                            prev();
+                        }
+                    }
+
+                    target.addEventListener('touchstart', touch_start);
+                    target.addEventListener('touchend', touch_end);
+                </script>
             </div>
             <!-- //home-work -->
 
