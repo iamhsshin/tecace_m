@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/favicon.ico" rel="shortcut icon" />
         <link rel="stylesheet" href="../css/index.css" />
+        <script src="../script/swipe.js"></script>
+        <script src="../script/lazyLoad.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -124,10 +126,10 @@
             <!-- //home-service -->
 
             <div class="home-work">
-                <button class="banner-swipe left">left</button>
-                <button class="banner-swipe right">right</button>
-                <div class="lazy slide">
-                    <a href="#">
+                <button class="banner-swipe left" id="btn_left">left</button>
+                <button class="banner-swipe right" id="btn_right">right</button>
+                <ul class="lazy" id="swipe">
+                    <li>
                         <dl>
                             <dt>
                                 <div class="home-work-thumb">
@@ -137,8 +139,8 @@
                             </dt>
                             <dd>Device optimization, Content Globalization, Retail environment</dd>
                         </dl>
-                    </a>
-                    <a href="#">
+                    </li>
+                    <li>
                         <dl>
                             <dt>
                                 <div class="home-work-thumb">
@@ -148,8 +150,8 @@
                             </dt>
                             <dd>Access your Smart Video Doorbells and Security Cameras</dd>
                         </dl>
-                    </a>
-                    <a href="#">
+                    </li>
+                    <li>
                         <dl>
                             <dt>
                                 <div class="home-work-thumb">
@@ -159,8 +161,8 @@
                             </dt>
                             <dd>Health activity app on Galaxy Watch</dd>
                         </dl>
-                    </a>
-                    <a href="#">
+                    </li>
+                    <li>
                         <dl>
                             <dt>
                                 <div class="home-work-thumb">
@@ -170,56 +172,26 @@
                             </dt>
                             <dd>Developed the portal and provided DevOps service</dd>
                         </dl>
-                    </a>
-                    <a href="#">
+                    </li>
+                    <li>
                         <dl>
                             <dt>
                                 <div class="home-work-thumb">
-                                    <img src="../images/home_work5.png" width="170" height="206" alt="" />
+                                    <img src="../images/home_work5.png" width="280" height="341" alt="" />
                                 </div>
                                 Rosetta Stone
                             </dt>
                             <dd>1:1 English tutoring service for Korean market</dd>
                         </dl>
-                    </a>
-                </div>
+                    </li>
+                </ul>
                 <script>
-                    let curPos = 0;
-                    let position = 0;
-                    let start_x, end_x;
-                    const distance = window.innerWidth;
-                    const target = document.querySelector(".slide")
-
-                    const prev = () => {
-                        if(curPos > 0){
-                            position += distance;
-                            target.style.transform = `translateX(${position}px)`;
-                            curPos = curPos - 1;
-                        }
-                    }
-                    const next = () => {
-                        if(curPos < 4){
-                            position -= distance;
-                            target.style.transform = `translateX(${position}px)`;
-                            curPos = curPos + 1;
-                        }
-                    }
-
-                    const touch_start = (event) => {
-                        start_x = event.touches[0].pageX
-                    }
-
-                    const touch_end = (event) => {
-                        end_x = event.changedTouches[0].pageX;
-                        if(start_x > end_x){
-                            next();
-                        }else{
-                            prev();
-                        }
-                    }
-
-                    target.addEventListener('touchstart', touch_start);
-                    target.addEventListener('touchend', touch_end);
+                    swipe({
+                        target: document.getElementById('swipe'),
+                        distance: window.innerWidth,
+                        btnLeft: document.getElementById('btn_left'),
+                        btnRight: document.getElementById('btn_right'),
+                    });
                 </script>
             </div>
             <!-- //home-work -->
@@ -376,7 +348,5 @@
             <!-- //home-contact -->
         </div>
         <!-- wrap -->
-
-        <script src="../script/lazyLoad.js"></script>
     </body>
 </html>

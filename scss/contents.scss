@@ -136,10 +136,10 @@
     position: relative;
     height: 558px;
     background: #212a50 url('../images/bg_home_work.svg') 50% 50% no-repeat;
-    & > div {
+    ul {
         display: flex;
     }
-    a {
+    li {
         flex: 0 0 100%;
         padding: 70px 50px;
         &:last-child {
@@ -201,36 +201,40 @@
         text-transform: uppercase;
         &:nth-child(1) {
             background-image: url('../images/ic-home-industries-iot.svg');
-            background-size: 50px auto;
+            background-size: 41px 35px;
         }
         &:nth-child(2) {
             background-image: url('../images/ic-home-industries-health.svg');
-            background-size: auto 55px;
+            background-size: 26px 44px;
         }
         &:nth-child(3) {
             flex: 0 0 100%;
             background-image: url('../images/ic-home-industries-education.svg');
-            background-size: 50px auto;
+            background-size: 40px 36px;
         }
         &:nth-child(4) {
             margin-bottom: 0;
             background-image: url('../images/ic-home-industries-retail.svg');
-            background-size: 41px 35px;
+            background-size: 40px 46px;
         }
         &:nth-child(5) {
             margin-bottom: 0;
             background-image: url('../images/ic-home-industries-portal.svg');
-            background-size: 50px auto;
+            background-size: 41px 39px;
         }
     }
 }
 .banner-swipe {
     position: absolute;
     top: 25px;
+    z-index: 10;
     width: 18px;
     height: 21px;
-    background-image: url('../images/ic-arrow-scroll.png');
+    background-image: url('../images/ic_arrow_scroll.svg');
     @include ir;
+    &.disabled {
+        background-image: url('../images/ic_arrow_scroll_disabled.svg');
+    }
     &.left {
         left: 50px;
     }
@@ -271,7 +275,7 @@
     em {
         font-size: 1.4rem;
         @include font-bold;
-        color: #2192d0;
+        color: $color-text-highlight;
     }
 }
 .home-contact {
@@ -478,51 +482,62 @@
 }
 .detail-solutions {
     padding: 60px 0;
-    background: url('../images/bg_pattern_solutions.svg') left 50% bottom 30px no-repeat;
     &.bgc {
         background-color: #f8fafc;
     }
     & > div:first-child {
         padding: 0 40px;
+        h4 {
+            position: relative;
+            margin-bottom: 32px;
+            padding-left: 18px;
+            @include font-semi-bold;
+            font-size: 2.8rem;
+            background: url('../images/bu_sub_title.svg') 0 14px no-repeat;
+        }
+        p {
+            margin-bottom: 30px;
+            padding-left: 18px;
+            font-size: 1.6rem;
+        }
+        ul {
+            margin-bottom: 65px;
+            padding-left: 24px;
+        }
+        li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            color: #143654;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 0;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #143654;
+            }
+        }
     }
     .detail-solutions-detail {
-        display: flex;
-        a {
-            flex: 0 0 64%;
+        position: relative;
+        padding: 30px 0;
+        background: url('../images/bg_pattern_solutions.svg') 50% 0 no-repeat;
+        background-size: cover;
+        ul {
+            display: flex;
+            position: relative;
+            left: 20%;
+        }
+        li {
+            flex: 0 0 60%;
             margin-right: 40px;
             &:last-child {
                 margin-right: 0;
             }
-        }
-    }
-    h4 {
-        position: relative;
-        margin-bottom: 32px;
-        @include font-semi-bold;
-        font-size: 2.8rem;
-    }
-    p {
-        margin-bottom: 30px;
-        font-size: 1.6rem;
-    }
-    ul {
-        margin-bottom: 65px;
-    }
-    li {
-        position: relative;
-        padding-left: 18px;
-        margin-bottom: 10px;
-        font-size: 1.8rem;
-        color: #143654;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 0;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: #143654;
         }
     }
     dl {

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/favicon.ico" rel="shortcut icon" />
         <link rel="stylesheet" href="../css/index.css" />
+        <script src="../script/swipe.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -70,28 +71,36 @@
                         <li>Multi device Experience</li>
                     </ul>
                 </div>
-                <div class="detail-solutions-detail lazy">
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech1.png" alt="" /></div>
-                        <dl>
-                            <dt>Retail Store Analytics</dt>
-                            <dd>Analytics Dashboard Using Data From Combination Of AI Camera, And App Analytics</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech2.png" alt="" /></div>
-                        <dl>
-                            <dt>Multi-device Experience</dt>
-                            <dd>Multi Device Experience Throughout Phone, Wearable, Tablet, PC, TV</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech3.png" alt="" /></div>
-                        <dl>
-                            <dt>Retail Experience App</dt>
-                            <dd>Device Optimization, Content Globalization, Retail Environment</dd>
-                        </dl>
-                    </a>
+                <div class="detail-solutions-detail">
+                    <ul class="lazy" id="swipe_tech">
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech1.png" alt="" /></div>
+                            <dl>
+                                <dt>Retail Store Analytics</dt>
+                                <dd>Analytics Dashboard Using Data From Combination Of AI Camera, And App Analytics</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech2.png" alt="" /></div>
+                            <dl>
+                                <dt>Multi-device Experience</dt>
+                                <dd>Multi Device Experience Throughout Phone, Wearable, Tablet, PC, TV</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_tech3.png" alt="" /></div>
+                            <dl>
+                                <dt>Retail Experience App</dt>
+                                <dd>Device Optimization, Content Globalization, Retail Environment</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <script>
+                        swipe({
+                            target: document.getElementById('swipe_tech'),
+                            distance: document.getElementById('swipe_tech').querySelector('li').clientWidth + 40,
+                        });
+                    </script>
                 </div>
             </div>
             <!-- //detail-solutions -->
@@ -107,28 +116,36 @@
                         <li>Real-time Operating Systems</li>
                     </ul>
                 </div>
-                <div class="detail-solutions-detail lazy">
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things1.png" alt="" /></div>
-                        <dl>
-                            <dt>Ring for Watch</dt>
-                            <dd>Access Your Smart Video Doorbells And Security Cameras</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things2.png" alt="" /></div>
-                        <dl>
-                            <dt>Touch Table</dt>
-                            <dd>UI/UX And App Development Along With Device Optimation For 52" Display</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things3.png" alt="" /></div>
-                        <dl>
-                            <dt>Avengers Exhibition</dt>
-                            <dd>Location Based Content Delivery Utilizing Beacon And Dedicated Wearable</dd>
-                        </dl>
-                    </a>
+                <div class="detail-solutions-detail">
+                    <ul class="lazy" id="swipe_things">
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things1.png" alt="" /></div>
+                            <dl>
+                                <dt>Ring for Watch</dt>
+                                <dd>Access Your Smart Video Doorbells And Security Cameras</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things2.png" alt="" /></div>
+                            <dl>
+                                <dt>Touch Table</dt>
+                                <dd>UI/UX And App Development Along With Device Optimation For 52" Display</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_things3.png" alt="" /></div>
+                            <dl>
+                                <dt>Avengers Exhibition</dt>
+                                <dd>Location Based Content Delivery Utilizing Beacon And Dedicated Wearable</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <script>
+                        swipe({
+                            target: document.getElementById('swipe_things'),
+                            distance: document.getElementById('swipe_things').querySelector('li').clientWidth + 40,
+                        });
+                    </script>
                 </div>
             </div>
             <!-- //detail-solutions -->
@@ -143,28 +160,36 @@
                         <li>Application development for health related data gathering and analyzing</li>
                     </ul>
                 </div>
-                <div class="detail-solutions-detail lazy">
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health1.png" alt="" /></div>
-                        <dl>
-                            <dt>Virtual Travel</dt>
-                            <dd>Wearable Gamified Health App</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health2.png" alt="" /></div>
-                        <dl>
-                            <dt>CareAce</dt>
-                            <dd>Health Monitoring Service Utilizing Wearable Sensors</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health3.png" alt="" /></div>
-                        <dl>
-                            <dt>Strava</dt>
-                            <dd>Health Activity App On Galaxy Watch</dd>
-                        </dl>
-                    </a>
+                <div class="detail-solutions-detail">
+                    <ul class="lazy" id="swipe_health">
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health1.png" alt="" /></div>
+                            <dl>
+                                <dt>Virtual Travel</dt>
+                                <dd>Wearable Gamified Health App</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health2.png" alt="" /></div>
+                            <dl>
+                                <dt>CareAce</dt>
+                                <dd>Health Monitoring Service Utilizing Wearable Sensors</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_health3.png" alt="" /></div>
+                            <dl>
+                                <dt>Strava</dt>
+                                <dd>Health Activity App On Galaxy Watch</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <script>
+                        swipe({
+                            target: document.getElementById('swipe_health'),
+                            distance: document.getElementById('swipe_health').querySelector('li').clientWidth + 40,
+                        });
+                    </script>
                 </div>
             </div>
             <!-- //detail-solutions -->
@@ -180,28 +205,36 @@
                         <li>SSO</li>
                     </ul>
                 </div>
-                <div class="detail-solutions-detail lazy">
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal1.png" alt="" /></div>
-                        <dl>
-                            <dt>Developer Portal DevOps</dt>
-                            <dd>Developed The Portal And Provided DevOps Service</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal2.png" alt="" /></div>
-                        <dl>
-                            <dt>ePOP Simulator</dt>
-                            <dd>EPOP Simulator For Desktop</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal3.png" alt="" /></div>
-                        <dl>
-                            <dt>Resource Studio</dt>
-                            <dd>Localization Tool For Different Countries</dd>
-                        </dl>
-                    </a>
+                <div class="detail-solutions-detail">
+                    <ul class="lazy" id="swipe_portal">
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal1.png" alt="" /></div>
+                            <dl>
+                                <dt>Developer Portal DevOps</dt>
+                                <dd>Developed The Portal And Provided DevOps Service</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal2.png" alt="" /></div>
+                            <dl>
+                                <dt>ePOP Simulator</dt>
+                                <dd>EPOP Simulator For Desktop</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_portal3.png" alt="" /></div>
+                            <dl>
+                                <dt>Resource Studio</dt>
+                                <dd>Localization Tool For Different Countries</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <script>
+                        swipe({
+                            target: document.getElementById('swipe_portal'),
+                            distance: document.getElementById('swipe_portal').querySelector('li').clientWidth + 40,
+                        });
+                    </script>
                 </div>
             </div>
             <!-- //detail-solutions -->
@@ -216,27 +249,35 @@
                     </ul>
                 </div>
                 <div class="detail-solutions-detail lazy">
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education1.png" alt="" /></div>
-                        <dl>
-                            <dt>Rosetta Stone</dt>
-                            <dd>1:1 English tutoring Service For Korean Market</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education2.png" alt="" /></div>
-                        <dl>
-                            <dt>Chunjae Education</dt>
-                            <dd>Education-Related EBooks For Students</dd>
-                        </dl>
-                    </a>
-                    <a href="#">
-                        <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education3.png" alt="" /></div>
-                        <dl>
-                            <dt>Neungyule Education</dt>
-                            <dd>Virtual Vocabulary Trainer For Studying TOEIC</dd>
-                        </dl>
-                    </a>
+                    <ul class="lazy" id="swipe_edu">
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education1.png" alt="" /></div>
+                            <dl>
+                                <dt>Rosetta Stone</dt>
+                                <dd>1:1 English tutoring Service For Korean Market</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education2.png" alt="" /></div>
+                            <dl>
+                                <dt>Chunjae Education</dt>
+                                <dd>Education-Related EBooks For Students</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="detail-solutions-thumb"><img src="../images/thumb_solution_education3.png" alt="" /></div>
+                            <dl>
+                                <dt>Neungyule Education</dt>
+                                <dd>Virtual Vocabulary Trainer For Studying TOEIC</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <script>
+                        swipe({
+                            target: document.getElementById('swipe_edu'),
+                            distance: document.getElementById('swipe_edu').querySelector('li').clientWidth + 40,
+                        });
+                    </script>
                 </div>
             </div>
             <!-- //detail-solutions -->
