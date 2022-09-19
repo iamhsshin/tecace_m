@@ -2,19 +2,19 @@ $color-text-default: #000000;
 $color-text-highlight: #4ac8f5;
 
 @mixin font-light {
-    font-family: Poppins-Light, serif;
+    font-family: Poppins-Light, NanumGothic, serif;
 }
 @mixin font-regular {
-    font-family: Poppins-Regular, serif;
+    font-family: Poppins-Regular, NanumGothic, serif;
 }
 @mixin font-medium {
-    font-family: Poppins-Medium, serif;
+    font-family: Poppins-Medium, NanumGothicBold, serif;
 }
 @mixin font-semi-bold {
-    font-family: Poppins-SemiBold, serif;
+    font-family: Poppins-SemiBold, NanumGothicBold, serif;
 }
 @mixin font-bold {
-    font-family: Poppins-Bold, serif;
+    font-family: Poppins-Bold, NanumGothicBold, serif;
 }
 @mixin ir {
     //image replacement

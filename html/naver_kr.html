@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-top banner-naver"><div></div></div>
+            <!-- //banner-top -->
+
+            <div class="naver-map">
+                <ul>
+                    <li class="active"><a href="#">EN</a></li>
+                    <li><a href="#">KR</a></li>
+                </ul>
+                <h2>
+                    네이버 지도, 내비게이션 <br />
+                    (Wear OS)
+                </h2>
+                <p>
+                    삼성 와치 4에 맞게 개발된 필수 앱, 구글 스토어에서 다운 받으세요. <br />
+                    <br />
+                    ※이 앱은 네이버(주)가 공식 승인한 Wear OS 전용 네이버 지도앱입니다.
+                </p>
+                <a href="#" class="download">google play download</a>
+                <a href="#" class="policy">Privacy Policy</a>
+            </div>
+            <!-- //naver-map -->
+
+            <div class="about-naver lazy">
+                <div class="contents-header" style="margin-bottom: 40px">
+                    <h3>
+                        원하는 장소를 언제 <br />
+                        어디서나 <br />
+                        네이버 맵에서 찾아보세요
+                    </h3>
+                    <p>당신이 가고자 하는 장소를 음성으로 쉽게 찾고, 다양한 네비게이션 옵션을 볼 수 있습니다. 중요한 장소는 즐겨찾기에 저장, 빠르게 찾을 수 있어요.</p>
+                </div>
+                <div class="ico-naver">
+                    <img src="../images/ico_naver.svg" width="180" height="180" alt="" />
+                </div>
+                <div>
+                    <img src="../images/contents_naver.png" width="337" height="222" alt="" />
+                </div>
+                <div class="feat-naver">
+                    <dl>
+                        <dt>음성 검색</dt>
+                        <dd>원하는 장소를 음성으로빠르게 찾아보세요.</dd>
+                    </dl>
+                    <dl>
+                        <dt>즐겨찾기</dt>
+                        <dd>자주 가는 장소를 저장, 쉽게 찾아 갈 수 있어요.</dd>
+                    </dl>
+                    <dl>
+                        <dt>경로 미리보기</dt>
+                        <dd>지도에서 도착 경로를 한눈에 확인해 보세요.</dd>
+                    </dl>
+                    <dl>
+                        <dt>턴바이턴 (TURN-BY-TURN) 네비게이션</dt>
+                        <dd>다음 회전까지의 거리 및 방향에 대한 정보를 표시해 줍니다</dd>
+                    </dl>
+                    <dl>
+                        <dt>다양한 교통수단</dt>
+                        <dd>
+                            자동차, 대중교통, 자전거 및 걷기까지,원하는 방법으로 선택해 보세요.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //about-naver -->
+
+            <div class="questions" id="questions">
+                <h3>자주 묻는 질문들 <br/> (FAQS)</h3>
+                <dl>
+                    <dt>네이버 지도 워치앱을 사용하기 위해 네이버 지도 모바일앱이 필요한가요?</dt>
+                    <dd>아닙니다. 스마트와치에 인터넷 연결만 되어 있으면 모바일앱이 없이도 사용할 수 있습니다. 다만, 폰에서 상세보기를 사용하시려면 폰에 네이버 맵 모바일앱이 필요합니다.</dd>
+                </dl>
+                <dl>
+                    <dt>네이버 지도 워치앱은 네이버(주) 와 관련이 있는 앱입니까?</dt>
+                    <dd>네. 이 앱은 네이버(주)가 공식 승인한 Wear OS 전용 네이버 지도앱입니다. 관련 내용을 다음 링크에서 확인할 수 있습니다. (https://blog.naver.com/naver_map/222497067056)</dd>
+                </dl>
+                <dl>
+                    <dt>네이버 지도 모바일앱에 저장된 즐겨찾기와 최근 검색 정보를 워치앱에서 볼 수 있습니까?</dt>
+                    <dd>네이버 지도 와치앱은 독립앱으로,기존의 정보를 가져오지 않습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>네이버 지도 와치앱은 전세계에서 사용가능한가요?</dt>
+                    <dd>아니요, 현재는 대한민국에서만 사용하실 수 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>음성 혹 문자 검색시 원하는 언어를 어떻게 추가할 수 있나요?</dt>
+                    <dd>세팅에서, ‘일반’을 선택, ‘입력’메뉴에서 원하는 언어를 추가하실 수 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>네이버 지도 와치앱은 검색 내용을 다른 사람, 다른 앱에 공유하나요?</dt>
+                    <dd>아닙니다. 당신이 검색한 내용은 어느 누구, 어느 다른 앱에도 공유되지 않습니다. 앱에서 검색 내용을 지우거나, 앱을 지우는 순간, 모든 내용은 영구적으로 삭제됩니다.</dd>
+                </dl>
+                <dl>
+                    <dt>네이버 지도 워치앱 사용시 궁금한점이 있으면 어떻게 고객지원팀에 연락할 수 있을까요?</dt>
+                    <dd>간단합니다. Tecace Support를 통해서 궁금하신 점을 알려주시면, 최선을 다해 답변 드리겠습니다.</dd>
+                </dl>
+                <script>
+                    document.querySelectorAll('div#questions dt').forEach((item) => {
+                        item.onclick = () => {
+                            item.classList.toggle('active');
+                        };
+                    });
+                </script>
+            </div>
+            <!-- //questions -->
+
+            <div class="home-contact">
+                <div class="home-contact-branches">
+                    <div>
+                        <h4>TecAce Software, Ltd.</h4>
+                        <dl>
+                            <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                            <dd>
+                                840 140 Ave. NE <br />
+                                Bellevue, WA 98005 <br />
+                                + 1 (425) 952-6070 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>ALLEN, TEXAS</dt>
+                            <dd>
+                                825 Watter’s Creek Blvd. <br />
+                                Building M, Suite 250 <br />
+                                Allen, TX 75013 <br />
+                                + 1 (972) 996-4700 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h4>TecAce Solutions, Inc.</h4>
+                        <dl>
+                            <dt>SEOUL, KOREA</dt>
+                            <dd>
+                                #910 130 Digital-ro Geumcheon-gu <br />
+                                Seoul, South Korea 08589 <br />
+                                + 82 (2) 2104-0370 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h4>TecAce gx, Ltd.</h4>
+                        <dl>
+                            <dt>SEOUL, KOREA</dt>
+                            <dd>
+                                #110 13F, 373, Gangnam-daero <br />
+                                Seocho-gu <br />
+                                Seoul, South Korea 08589 <br />
+                                + 82 (2) 6959-1200 <br />
+                                gx@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>

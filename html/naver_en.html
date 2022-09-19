@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TecAce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main-header">
+                <h1>TecAce</h1>
+                <button id="gnb_toggle">menu</button>
+            </header>
+            <!-- //main-header -->
+
+            <ul class="gnb" id="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="depth focus">
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li class="focus"><a href="#">Who We Are</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+
+            <script>
+                document.getElementById('gnb_toggle').onclick = () => {
+                    document.getElementById('gnb').classList.add('active');
+                    document.querySelector('body').style.overflow = 'hidden';
+                };
+            </script>
+
+            <div class="banner-top banner-naver"><div></div></div>
+            <!-- //banner-top -->
+
+            <div class="naver-map">
+                <ul>
+                    <li class="active"><a href="#">EN</a></li>
+                    <li><a href="#">KR</a></li>
+                </ul>
+                <h2>
+                    Naver Map, Navigation <br />
+                    (Wear OS)
+                </h2>
+                <p>
+                    The essential Samsung smartwatch app. Made for the Galaxy Watch4. <br />
+                    <br />
+                    ※ This app has been officially approved by Naver Co., Ltd.
+                </p>
+                <a href="#" class="download">google play download</a>
+                <a href="#" class="policy">Privacy Policy</a>
+            </div>
+            <!-- //naver-map -->
+
+            <div class="about-naver lazy">
+                <div class="contents-header" style="margin-bottom: 40px">
+                    <h3>Map your places anywhere, anytime</h3>
+                    <p>Search the places you want to go with your voice, choose among various navigation options, and bookmark important locations for quick access.</p>
+                </div>
+                <div class="ico-naver">
+                    <img src="../images/ico_naver.svg" width="180" height="180" alt="" />
+                </div>
+                <div>
+                    <img src="../images/contents_naver.png" width="337" height="222" alt="" />
+                </div>
+                <div class="feat-naver">
+                    <dl>
+                        <dt>SPEAK AND GO</dt>
+                        <dd>
+                            Use your voice to search your next <br />
+                            destination
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>SAVE YOUR FAVORITES</dt>
+                        <dd>
+                            A place where everyone has <br />
+                            opportunities to achieve their <br />
+                            professional best
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>PREVIEW YOUR PATH</dt>
+                        <dd>
+                            A place where everyone <br />
+                            celebrates shared achievements
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>TURN-BY-TURN NAVIGATION</dt>
+                        <dd>
+                            A place where everyone is <br />
+                            inspired by working together
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ALL MODES OF TRANSPORTATION</dt>
+                        <dd>
+                            A place where everyone’s work <br />
+                            brings benefit to the world
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //about-naver -->
+
+            <div class="questions" id="questions">
+                <h3>FREQUENTLY ASKED QUESTIONS</h3>
+                <dl>
+                    <dt>DO I NEED THE NAVER MAP MOBILE APP TO USE THIS WATCH APP?</dt>
+                    <dd>No, as long as you have internet connection, the Naver Map WearOS app will work. If you want to see details on your mobile phone, however, you will need to have the Naver Map mobile app installed.</dd>
+                </dl>
+                <dl>
+                    <dt>IS THE NAVER MAP WATCH APP RELATED TO NAVER CO., LTD.?</dt>
+                    <dd>Yes. This app is a Naver map app for Wear OS that has been officially approved by Naver Co., Ltd. Related information can be found at the following link. (https://blog.naver.com/naver_map/222497067056)</dd>
+                </dl>
+                <dl>
+                    <dt>CAN I SEE MY FAVORITES AND RECENT SEARCHES I HAVE ON THE NAVER MAP MOBILE APP ON MY WATCH?</dt>
+                    <dd>No, this is a standalone watch app that is not connected to the mobile version of the Naver Map, so we do not have access to that informatio</dd>
+                </dl>
+                <dl>
+                    <dt>DOES THIS APP WORK IN ANY LOCATION GLOBALLY?</dt>
+                    <dd>We only support locations in South Korea for now.</dd>
+                </dl>
+                <dl>
+                    <dt>HOW DO I ADD LANGUAGES TO VOICE OR TEXT SEARCH?</dt>
+                    <dd>On your watch, go to ‘Settings’, then ‘General’, then ‘Input’. You’ll be able to add languages from there.</dd>
+                </dl>
+                <dl>
+                    <dt>DOES NAVER MAP, NAVIGATION (WEAROS) SHARE MY SEARCH HISTORY WITH ANY OTHER APPS OR PEOPLE?</dt>
+                    <dd>NO. Your information will never be shared with any other apps nor anyone other than you. If you delete the app, all of your search history and the places you have favorited will be permanently deleted.</dd>
+                </dl>
+                <dl>
+                    <dt>I'M HAVING TROUBLE WITH THE APP. HOW DO I CONTACT CUSTOMER SUPPORT FOR NAVER MAP, NAVIGATION(WEAROS)?</dt>
+                    <dd>Go to Tecace Support and we would be happy to assist you.</dd>
+                </dl>
+                <script>
+                    document.querySelectorAll('div#questions dt').forEach((item) => {
+                        item.onclick = () => {
+                            item.classList.toggle('active');
+                        };
+                    });
+                </script>
+            </div>
+            <!-- //questions -->
+
+            <div class="home-contact">
+                <div class="home-contact-branches">
+                    <div>
+                        <h4>TecAce Software, Ltd.</h4>
+                        <dl>
+                            <dt>BELLEVUE, WASHINGTON (HQ)</dt>
+                            <dd>
+                                840 140 Ave. NE <br />
+                                Bellevue, WA 98005 <br />
+                                + 1 (425) 952-6070 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>ALLEN, TEXAS</dt>
+                            <dd>
+                                825 Watter’s Creek Blvd. <br />
+                                Building M, Suite 250 <br />
+                                Allen, TX 75013 <br />
+                                + 1 (972) 996-4700 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h4>TecAce Solutions, Inc.</h4>
+                        <dl>
+                            <dt>SEOUL, KOREA</dt>
+                            <dd>
+                                #910 130 Digital-ro Geumcheon-gu <br />
+                                Seoul, South Korea 08589 <br />
+                                + 82 (2) 2104-0370 <br />
+                                contact@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h4>TecAce gx, Ltd.</h4>
+                        <dl>
+                            <dt>SEOUL, KOREA</dt>
+                            <dd>
+                                #110 13F, 373, Gangnam-daero <br />
+                                Seocho-gu <br />
+                                Seoul, South Korea 08589 <br />
+                                + 82 (2) 6959-1200 <br />
+                                gx@tecace.com
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- //home-contact -->
+        </div>
+        <!-- wrap -->
+
+        <script src="../script/lazyLoad.js"></script>
+    </body>
+</html>
